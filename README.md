@@ -6,7 +6,8 @@ It is designed to help data analysts and business intelligence professionals eff
 Project Description:
 
 The Advanced Analytics Project demonstrates systematic approaches to Advanced Data Analysis using SQL.  It is the last of three sequential projects.  The data and coding leading up to this project can be found in 
-1) Data Warehouse Project followed by 2) Exploratory Data Analysis project.
+1)SQL-Data-Warehouse-Project followed by 2) SQL-Exploratory-Data-Analysis-Project
+
    
 Each script is organized by analytical theme, providing a reusable toolkit for understanding datasets, identifying trends, and preparing data for reporting and visualization.
 -
