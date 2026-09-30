@@ -10,26 +10,13 @@ Each script is organized by analytical theme, providing a reusable toolkit for u
 -
 Analytical Themes
 
-Dimensions Exploration Focus on categorical variables.
+Performance Analysis
+* Comparing Current and target values
 
-Distribution analysis
-Unique value counts
-Segmentation queries
-Date Exploration Work with time-based fields.
+Part-to-Whole Analysis
+* Proportional Analysis
 
-Trends over time
-Seasonality checks
-Rolling windows
-Measures Exploration Analyze numerical measures.
+Data Segmentation
+* Grouping based on ranges
 
-Central tendency (AVG)
-Outlier detection
-Magnitude Analysis Compare values to understand scale and impact.
 
-Absolute vs relative measures
-Growth and decline patterns
-Ranking Analysis Identify leaders and laggards.
-
-Top-N queries
-Percentile ranking
-Dense vs sparse ranking
