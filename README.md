@@ -1,4 +1,4 @@
-** Advanced Analytics Project
+-- Advanced Analytics Project
 ---
 This repository contains a comprehensive collection of SQL scripts for data exploration, analytics, and reporting.
 It is designed to help data analysts and business intelligence professionals efficiently explore, segment, and analyze data within relational databases.
