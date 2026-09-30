@@ -8,7 +8,9 @@ Project Description:
 The Advanced Analytics Project demonstrates systematic approaches to Advanced Data Analysis using SQL.  It is the last of three sequential projects.  The data and coding leading up to this project can be found in 
 
 1)SQL-Data-Warehouse-Project (https://github.com/amandam1083-ux/SAS-SQL-Data-Warehouse-Project)
+
 followed by 
+
 2) SQL-Exploratory-Data-Analysis-Project (https://github.com/amandam1083-ux/SQL-Exploratory-Data-Analysis-Project)
 
    
