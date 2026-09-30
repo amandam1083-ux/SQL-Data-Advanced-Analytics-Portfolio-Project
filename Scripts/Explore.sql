@@ -143,3 +143,35 @@ with product_segment as (
 	from product_segment
 	group by cost_range
 
+
+  --Group customer in three segments based on their spending behavior:
+		--VIP: at least 12 months of history but spending more than $5,000
+		--Regular: at least 12 months of history but spending $5,000 or less
+		--New: lifespan less than 12 months
+with customer_grouping as (
+ Select
+ c.customer_key,
+ SUM(s.sales_amount) AS TOTAL_SPENDING,
+ MIN(s.order_date) AS First_Order,
+ MAX(s.order_date) AS LAST_ORDER,
+ DATEDIFF(MONTH, mIN(order_date), MAX(order_date)) AS lIFESPAN
+ from gold.fact_sale s
+ left join gold.dim_customer c
+ on c.customer_key = s.customer_key
+ Group by c.customer_key
+ )
+ Select
+ customer_group,
+ count(customer_key) as total_customers
+ from (
+ Select
+ customer_key,
+ case when LIFESPAN >11 and TOTAL_SPENDING >= 5000 then 'VIP'
+	  when LIFESPAN >11 and TOTAL_SPENDING < 5000 then 'REGULAR'
+	  else 'New'
+	  end as customer_group
+from customer_grouping
+) t
+Group By customer_group
+order by total_customers
+
